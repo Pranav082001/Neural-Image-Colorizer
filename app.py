@@ -72,7 +72,7 @@ def colorize(img,print_img=True):
 
 # device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # torch.load with map_location=torch.device('cpu') 
-model=torch.load("model-final.pth").cpu()
+model=torch.load("model-final.pth",map_location ='cpu')
 
 
 import streamlit as st
