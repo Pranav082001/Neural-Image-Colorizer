@@ -2,7 +2,9 @@
 torch==1.7.1+cpu
 torchvision==0.9.1+cpu
 numpy==1.18.5
-opencv-contrib-python==4.4.0.46
+opencv-python-headless==4.4.0.46
 matplotlib==3.4.2
 scikit-image==0.18.1
 streamlit==0.81.1
+freeglut3-dev
+libgtk2.0-dev
