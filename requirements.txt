@@ -6,5 +6,3 @@ opencv-python-headless==4.4.0.46
 matplotlib==3.4.2
 scikit-image==0.18.1
 streamlit==0.81.1
-freeglut3-dev
-libgtk2.0-dev
