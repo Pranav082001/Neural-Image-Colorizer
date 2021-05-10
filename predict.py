@@ -75,5 +75,5 @@ def colorize(img_path,print_img=True):
         plt.imshow(predicted)
     return predicted
 
-out=colorize("download.png")
-print(out)
+# out=colorize("download.png")
+# print(out)
