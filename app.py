@@ -71,8 +71,8 @@ def colorize(img,print_img=True):
     return predicted
 
 # device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
-torch.load with map_location=torch.device('cpu') 
-model=torch.load("model-final.pth")
+# torch.load with map_location=torch.device('cpu') 
+model=torch.load("model-final.pth").cpu()
 
 
 import streamlit as st
