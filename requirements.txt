@@ -1,6 +1,6 @@
 numpy==1.18.5
 opencv-contrib-python==4.4.0.46
-torch==1.7.0
+torch==1.6.0
 matplotlib==3.4.2
 skimage==0.18.1
 streamlit==0.81.1
