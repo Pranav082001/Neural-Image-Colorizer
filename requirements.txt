@@ -1,5 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-torch==1.6.0+cpu 
+torch==1.7.1+cpu
 torchvision==0.9.1+cpu
 numpy==1.18.5
 opencv-contrib-python==4.4.0.46
