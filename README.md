@@ -3,6 +3,8 @@ Image Colorization using Autoencoders [PyTorch]
 
 Heroku - https://neural-image-colorizer.herokuapp.com/
 
+Medium - https://medium.com/@pranav.kushare2001/colorize-your-black-and-white-photos-using-ai-4652a34e967
+
 <h1>Output</h1>
 Input B/w image vs Output Colored Image
 
