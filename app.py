@@ -76,16 +76,21 @@ model=torch.load("model-final.pth",map_location ='cpu')
 
 
 import streamlit as st
+
 st.title("Image Colorizer")
-        
-file=st.file_uploader("Please upload the B/W image",type=["jpg","jpeg","png"])
-print(file)
-if file is None:
-  st.text("Please Upload an image")
-else:
-    file_bytes = np.asarray(bytearray(file.read()), dtype=np.uint8)
-    opencv_image = cv2.imdecode(file_bytes, 1)
-    im=colorize(opencv_image)
-    st.image(im)
+st.write('\n')
+st.write('Find more info at: https://github.com/Pranav082001/Neural-Image-Colorizer or at https://medium.com/@pranav.kushare2001/colorize-your-black-and-white-photos-using-ai-4652a34e967.')
+
+# Sidebar
+st.sidebar.title("Upload Image")
+file=st.sidebar.file_uploader("Please upload a Black and White image",type=["jpg","jpeg","png"])
+
+if st.sidebar.button("Colorize image"):
+    with st.spinner('Colorizing...'):
+      file_bytes = np.asarray(bytearray(file.read()), dtype=np.uint8)
+      opencv_image = cv2.imdecode(file_bytes, 1)
+      im=colorize(opencv_image)
+    st.text("Original")
+    st.image(file)
     st.text("Colorized!!")
-    # st.image(file)
+    st.image(im)
