@@ -1,4 +1,7 @@
 # Neural-Image-Colorizer
+
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/osanseviero/Neural_Image_Colorizer)
+
 Image Colorization using Autoencoders [PyTorch]
 
 Heroku - https://neural-image-colorizer.herokuapp.com/
